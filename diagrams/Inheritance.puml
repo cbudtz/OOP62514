@@ -1,0 +1,37 @@
+@startuml
+!theme _none_
+
+
+
+class Lecturer {
+    'name
+    'department
+    'id
+    courses
+}
+class ResearchAssistant {
+    'name
+    'department
+    'id
+}
+class Student {
+    'name
+    'id
+}
+
+class Employee {
+    department
+}
+
+class Person {
+    name
+    id
+}
+
+Employee <|-- Lecturer
+Employee <|-- ResearchAssistant
+
+Person <|-- Employee
+Person <|--Student
+
+@enduml
