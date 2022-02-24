@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class Shape{
+    getArea()
+}
+
+class Circle{
+    radius
+}
+
+class Rectangle{
+    width
+    height
+}
+
+Shape <|-- Circle
+Shape <|-- Rectangle
+
+@enduml
